@@ -7,6 +7,7 @@
     <title>Principal</title>
 </head>
 <body>
-    <h1>Hola Mundo!</h1>
+    <h1>Página principal</h1>
+    <a href="/registro" class="btn-success">Registrar libro</a>
 </body>
 </html>
