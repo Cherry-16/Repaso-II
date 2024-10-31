@@ -2,10 +2,6 @@
 
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('principal');
-});
-
-Route::get('/registro', function () {
-    return view('registro_libro');
-    });
+Route::get('/', [ControladorVistas::class, 'index'])->name('principal');
+Route::get('/registro', [ControladorVistas::class, 'registro'])->name('registro');
+Route::post('/guardar-libro', [ControladorVistas::class, 'guardarLibro'])->name('guardarLibro');
