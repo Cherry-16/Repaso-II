@@ -3,31 +3,25 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Http\Requests\ValidadorLibro;  // Asegúrate de que este archivo exista y esté configurado.
 
 class ControladorVistas extends Controller
 {
-    public function index()
+    public function home()
     {
         return view('principal');
-    }
+    } 
 
-    public function registro()
+    public function registrar()
     {
         return view('registro_libro');
     }
 
-    public function guardarLibro(Request $request)
+    public function procesarLibro(ValidadorLibro $request)
     {
-        $request->validate([
-            'isbn' => 'required|digits:13',
-            'titulo' => 'required|string|max:150',
-            'autor' => 'required|string',
-            'paginas' => 'required|integer|min:1',
-            'anio' => 'required|integer|between:1000,' . date('Y'),
-            'editorial' => 'required|string',
-            'email_editorial' => 'required|email',
-        ]);
+        $titulo = $request->input('titulo');
         
-        return redirect()->back()->with('exito', 'Libro "' . $request->titulo . '" guardado');
+        session()->flash('exito', 'Todo correcto: Libro "' . $titulo . '" guardado');
+        return redirect()->route('rutaregistro');
     }
 }
