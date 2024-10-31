@@ -18,12 +18,12 @@
             position: relative;
             bottom: 0;
             width: 100%;
-            background-color: #c3c4c5; 
+            background-color: #9ac9f8; 
         }
     </style>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg" style="background-color: #9ac9f8">
         <div class="container-fluid">
           <a class="navbar-brand" href="{{ route('rutaprincipal') }}">{{__('Menú Principal')}}</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
