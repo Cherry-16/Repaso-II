@@ -44,6 +44,15 @@
     "Too Many Requests": "Too Many Requests",
     "Unauthorized": "Unauthorized",
     "Verify Email Address": "Verify Email Address",
-    "Whoops!": "Whoops!",
+    "Whoops!": "Whoops!", 
+    "Registrar Libro": "Register book", 
+    "ISBN:":"ISBN",
+    "Título del Libro:":"Book title:",
+    "Autor:":"Author:",
+    "Páginas:":"Pages:",
+    "Año:":"Year:",
+    "Email de Editorial":"Publisher email", 
+    "Registrar":"Register", 
+    "Menú Principal":"Main Page",
     "You are receiving this email because we received a password reset request for your account.": "You are receiving this email because we received a password reset request for your account."
 }

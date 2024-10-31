@@ -25,14 +25,14 @@
 <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-          <a class="navbar-brand" href="{{ route('rutaprincipal') }}">Principal</a>
+          <a class="navbar-brand" href="{{ route('rutaprincipal') }}">{{__('Menú Principal')}}</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="{{ route('rutaregistro') }}">Registrar Libro</a>
+                <a class="nav-link active" aria-current="page" href="{{ route('rutaregistro') }}">{{__('Registrar Libro')}}</a>
               </li>
             </ul>
           </div>
@@ -50,7 +50,7 @@
     <script>
         const today = new Date();
         const options = { year: 'numeric', month: 'long', day: 'numeric' };
-        const formattedDate = today.toLocaleDateString('es-ES', options);
+        const formattedDate = today.toLocaleDateString('en-EN', options);
         const footerText = `Biblioteca Arcoiris | © ${formattedDate}`;
         document.getElementById('footer-text').innerText = footerText;
     </script>

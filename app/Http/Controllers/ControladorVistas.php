@@ -16,9 +16,10 @@ class ControladorVistas extends Controller
         return view('registro_libro');
     }
     public function procesarLibro(ValidadorLibro $request)
-    {
-        $titulo = $request->input('titulo');
-        session()->flash('exito', 'Todo correcto: Libro "' . $titulo . '" guardado');
-        return redirect()->route('rutaregistro');
-    }
+{
+    $titulo = $request->input('titulo');
+    session()->flash('exito', 'Todo correcto: Libro "' . $titulo . '" guardado / All good: Book "' . $titulo . '" saved');
+    return redirect()->route('rutaregistro');
+}
+
 }
